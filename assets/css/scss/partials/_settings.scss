@@ -1,0 +1,17 @@
+// Fonts
+$font-default: 'Lato', sans-serif;
+
+// Grid settings
+$grid-width: 1200px;
+$grid-columns: 12;
+$grid-gutter: 20px;
+$grid-generate: true;
+$grid-column-prefix: 'column-';
+$grid-row-prefix: 'row';
+$grid-push-prefix: 'push-';
+
+// Responsive sizes
+$phone: '(max-width: 480px)';
+$tablet: '(max-width: 768px)';
+$laptop: '(max-width: 960px)';
+$desktop: '(max-width: 1200px)';

@@ -1,0 +1,24 @@
+
+main {
+    width: 100%;
+    max-width: 860px;
+    margin: 0 auto;
+
+    .main-content {
+        margin: 0 8px;
+        padding: 60px 0;
+    }
+
+    .examples {
+        display: block;
+        margin-bottom: 80px;
+
+        &:last-child { margin-bottom: 20px; }
+
+        h3 {
+            color: #444;
+            margin: 0;
+            padding: 0 0 20px 0;
+        }
+    }
+}

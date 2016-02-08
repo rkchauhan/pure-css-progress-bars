@@ -1,0 +1,14 @@
+
+
+.progress1 {
+   background-color: $pg-default-bg;
+   box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.2);
+
+   .cssProgress-bar {
+      height: 18px;
+   }
+
+   .cssProgress-label {
+      line-height: 18px;
+   }
+}

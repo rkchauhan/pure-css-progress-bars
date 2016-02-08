@@ -1,0 +1,104 @@
+
+.cssProgress {
+   width: 100%;
+   margin-bottom: 20px;
+
+   .progress1,
+   .progress2,
+   .progress3 {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      font-family: "Roboto", sans-serif;
+   }
+
+   .cssProgress-bar {
+      display: block;
+      float: left;
+      width: 0%;
+      height: 100%;
+      background: $bar-default-bg;
+      box-shadow: inset 0px -1px 2px rgba(0, 0, 0, 0.1);
+      transition: width 0.8s ease-in-out;
+   }
+
+   .cssProgress-label {
+      position: absolute;
+      overflow: hidden;
+      left: 0px;
+      right: 0px;
+      color: rgba(0, 0, 0, 0.6);
+      font-size: 0.7em;
+      text-align: center;
+      text-shadow: 0px 1px rgba(0, 0, 0, 0.3);
+   }
+
+   .cssProgress-info { background-color: $bar-info-bg !important; }
+   .cssProgress-danger { background-color: $bar-danger-bg !important; }
+   .cssProgress-success { background-color: $bar-success-bg !important; }
+   .cssProgress-warning { background-color: $bar-warning-bg !important; }
+
+   .cssProgress-right { float: right !important; }
+
+   .cssProgress-label-left {
+      margin-left: 10px;
+      text-align: left !important;
+   }
+
+   .cssProgress-label-right {
+      margin-right: 10px;
+      text-align: right !important;
+   }
+
+   .cssProgress-label2 {
+      display: block;
+      margin: 2px 0;
+      padding: 0 8px;
+      font-size: 0.8em;
+
+      &.cssProgress-label2-right { text-align: right; }
+      &.cssProgress-label2-center { text-align: center; }
+   }
+
+   .cssProgress-stripes,
+   .cssProgress-active,
+   .cssProgress-active-right {
+      background-image: linear-gradient(
+         -45deg,
+         rgba(255, 255, 255, .125) 25%,
+         transparent 25%,
+         transparent 50%,
+         rgba(255, 255, 255, .125) 50%,
+         rgba(255, 255, 255, .125) 75%,
+         transparent 75%,
+         transparent
+      );
+      background-size: 35px 35px;
+   }
+
+   .cssProgress-active {
+     animation: cssProgressActive 2s linear infinite;
+   }
+
+   .cssProgress-active-right {
+      animation: cssProgressActiveRight 2s linear infinite;
+   }
+
+   @keyframes cssProgressActive {
+      0% {
+         background-position: 0 0;
+      }
+      100% {
+         background-position: 35px 35px;
+      }
+   }
+
+   @keyframes cssProgressActiveRight {
+      0% {
+         background-position: 0 0;
+      }
+      100% {
+         background-position: -35px -35px;
+      }
+   }
+}

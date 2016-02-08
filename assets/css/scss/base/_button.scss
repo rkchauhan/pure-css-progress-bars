@@ -1,0 +1,28 @@
+
+.btn {
+   display: inline-block;
+   position: relative;
+   height: 30px;
+   font-weight: bold;
+   font-size: 12px;
+   line-height: 30px;
+   text-align: center;
+   text-decoration: none;
+   vertical-align: baseline;
+   white-space: nowrap;
+   cursor: pointer;
+   outline: none;
+   padding: 0px 14px;
+   border-radius: 2px;
+
+   &.btn-primary {
+      color: #FFF;
+      border: 1px solid #FFA500;
+      background-color: #FFA500;
+
+      &:hover {
+         border: 1px solid darken(#FFA500, 3%);
+         background-color: darken(#FFA500, 3%);
+      }
+   }
+}
