@@ -1,0 +1,185 @@
+/* -----------------------------------------------------
+  Pure CSS Progress Bars
+  GitHub Project: https://github.com/rkchauhan/pure-css-progress-bars/
+  By: Ravikumar Chauhan
+  Find me on -
+  Twitter: https://twitter.com/rkchauhan01
+  Facebook: https://www.facebook.com/ravi032chauhan
+  GitHub: https://github.com/rkchauhan
+  CodePen: http://codepen.io/rkchauhan
+-------------------------------------------------------- */
+/* -----------------------------------------------------
+  Google Roboto font
+-------------------------------------------------------- */
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/roboto/Roboto-Regular.eot");
+  src: local("Roboto"), local("Roboto-Regular"), url("../fonts/roboto/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/Roboto-Regular.woff2") format("woff2"), url("../fonts/roboto/Roboto-Regular.woff") format("woff"), url("../fonts/roboto/Roboto-Regular.ttf") format("truetype"), url("../fonts/roboto/Roboto-Regular.svg#Roboto-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* -----------------------------------------------------
+  Body
+-------------------------------------------------------- */
+body {
+  margin: 0;
+  padding: 0;
+  color: #333;
+  font-size: 1em;
+  font-family: "Roboto", sans-serif;
+  background-color: #F8F8F8;
+}
+
+*, *::after, *::before {
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a {
+  color: #ffa000;
+  text-decoration: none;
+  outline: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* -----------------------------------------------------
+    Main
+-------------------------------------------------------- */
+main {
+  width: 100%;
+  max-width: 940px;
+  margin: 0 auto;
+}
+main .main-content {
+  margin: 0 8px;
+  padding: 60px 0;
+}
+main .examples {
+  display: block;
+  margin-bottom: 65px;
+  padding: 2.8rem 3%;
+  background-color: #FFF;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.157);
+}
+main .examples:last-child {
+  margin-bottom: 20px;
+}
+main .examples h3 {
+  color: #444;
+  margin: 0;
+  padding: 0 0 20px 0;
+}
+
+/* -----------------------------------------------------
+   Header
+-------------------------------------------------------- */
+header {
+  display: block;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  background-color: #FFF;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
+}
+header h2 {
+  margin: 0;
+  padding: 25px 0;
+  color: #646360;
+  font-size: 2em;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+header .project {
+  display: block;
+  padding: 8px 0;
+}
+
+/* -----------------------------------------------------
+    Footer
+-------------------------------------------------------- */
+footer {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  min-height: 80px;
+  background-color: #FFF;
+  border-top: 1px solid #EEE;
+}
+footer .row {
+  width: 100%;
+  max-width: 860px;
+  margin: 0 auto;
+}
+footer .footer-content {
+  margin: 0 8px;
+  padding: 25px 0 18px;
+  text-align: center;
+}
+footer .footer-content span {
+  color: rgba(0, 0, 0, 0.525);
+  font-size: 0.857em;
+  margin-right: 5px;
+}
+@media only screen and (max-width: 768px) {
+  footer span {
+    display: block;
+    width: 100%;
+    margin-bottom: 8px;
+  }
+}
+
+/* -----------------------------------------------------
+   Buttons
+-------------------------------------------------------- */
+.btn1,
+.btn {
+  color: #FFF;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: baseline;
+  white-space: nowrap;
+  cursor: pointer;
+  outline: none;
+  border-radius: 3px;
+}
+.btn1:hover,
+.btn:hover {
+  text-decoration: none;
+}
+
+.gitBtn,
+.penBtn {
+  height: 38px;
+  font-size: 1.1em;
+  line-height: 38px;
+  margin-right: 10px;
+  padding: 0px 22px;
+  border: 1px solid #FFA500;
+  background-color: #FFA500;
+  box-shadow: 0px 2px rgba(0, 0, 0, 0.157);
+}
+.gitBtn:last-child,
+.penBtn:last-child {
+  margin-right: 0;
+}
+
+.btn {
+  height: 30px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 30px;
+  padding: 0px 14px;
+}
+.btn.btn-primary {
+  border: 1px solid #FFA500;
+  background-color: #FFA500;
+}
+.btn.btn-primary:hover {
+  border: 1px solid #f09b00;
+  background-color: #f09b00;
+}

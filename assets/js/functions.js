@@ -1,3 +1,13 @@
+/* -----------------------------------------------------
+  Pure CSS Progress Bars
+  GitHub Project: https://github.com/rkchauhan/pure-css-progress-bars/
+  By: Ravikumar Chauhan
+  Find me on -
+  Twitter: https://twitter.com/rkchauhan01
+  Facebook: https://www.facebook.com/ravi032chauhan
+  GitHub: https://github.com/rkchauhan
+  CodePen: http://codepen.io/rkchauhan
+-------------------------------------------------------- */
 $(document).ready(function() {
 
   $('#example-1').progress_fnc();
@@ -10,6 +20,9 @@ $(document).ready(function() {
   $('#example-8').progress_fnc();
   $('#example-9').progress_fnc();
   $('#example-10').progress_fnc();
+  $('#example-11').progress_fnc();
+  $('#example-12').progress_fnc();
+  $('#example-13').progress_fnc();
 
   $('.progressStart').on('click', function() {
     var perent = $(this).closest("div").attr("id");
@@ -22,6 +35,7 @@ $(document).ready(function() {
   });
 
 });
+
 
 (function($) {
 
@@ -40,7 +54,7 @@ $(document).ready(function() {
       var progress_value = progress_bar.data('percent');
       var percentage = parseInt(progress_value, 10) + '%';
 
-      progress_bar.css({'transition': 'none', '-webkit-transition': 'none', '-moz-transition': 'none'});
+      progress_bar.css({'width': '0%', 'transition': 'none', '-webkit-transition': 'none', '-moz-transition': 'none'});
 
       if(settings.type == 'start') {
 

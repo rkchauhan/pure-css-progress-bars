@@ -1,0 +1,43 @@
+// ADDS A BROWSER PREFIX TO THE PROPERTY
+@mixin browser_prefix($property, $value) {
+  -webkit-#{$property}: #{$value};
+     -moz-#{$property}: #{$value};
+      -ms-#{$property}: #{$value};
+       -o-#{$property}: #{$value};
+          #{$property}: #{$value};
+}
+
+// KEYFRAMES
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+  }
+  @-moz-keyframes #{$animation-name} {
+    @content;
+  }
+  @-ms-keyframes #{$animation-name} {
+    @content;
+  }
+  @-o-keyframes #{$animation-name} {
+    @content;
+  }
+  @keyframes #{$animation-name} {
+    @content;
+  }
+}
+
+// ANIMATION
+@mixin animation($str) {
+  @include browser_prefix('animation', $str);
+}
+
+@mixin cssProgressGlowActive($name, $color) {
+  @include keyframes($name) {
+    0%, 100% {
+      box-shadow: 5px 0px 15px 0px #{$color};
+    }
+    45% {
+      box-shadow: 1px 0px 4px 0px #{$color};
+    }
+  }
+}

@@ -1,0 +1,52 @@
+/* -----------------------------------------------------
+  Progress Bar 4
+-------------------------------------------------------- */
+.progress4 {
+  position: relative;
+  width: 100%;
+  background-color: $pg-default-bg;
+
+  &.cssProgress-bg { background-color: #bbdefb !important; }
+  &.cssProgress-bg-info { background-color: #d1c4e9 !important; }
+  &.cssProgress-bg-danger { background-color: #ffcdd2 !important; }
+  &.cssProgress-bg-success { background-color: #c8e6c9 !important; }
+  &.cssProgress-bg-warning { background-color: #ffecb3 !important; }
+
+  .cssProgress-bar {
+    display: block;
+    float: none;
+    width: 0%;
+    height: 4px;
+    background: $bar-default-bg;
+
+    &.cssProgress-lg { height: 6px; }
+    &.cssProgress-2x { height: 8px; }
+    &.cssProgress-3x { height: 10px; }
+    &.cssProgress-4x { height: 12px; }
+    &.cssProgress-5x { height: 14px; }
+
+    &.cssProgress-glow {
+      box-shadow: 5px 0px 15px 0px #3798D9;
+
+      &.cssProgress-info { box-shadow: 5px 0px 15px 0px $bar-info-bg; }
+      &.cssProgress-danger { box-shadow: 5px 0px 15px 0px $bar-danger-bg; }
+      &.cssProgress-success { box-shadow: 5px 0px 15px 0px $bar-success-bg; }
+      &.cssProgress-warning { box-shadow: 5px 0px 15px 0px $bar-warning-bg; }
+    }
+
+    &.cssProgress-glow-active {
+      @include animation('cssProgressGlowActive1 3s linear infinite');
+
+      &.cssProgress-info { @include animation('cssProgressGlowActive2 3s linear infinite'); }
+      &.cssProgress-danger { @include animation('cssProgressGlowActive3 3s linear infinite'); }
+      &.cssProgress-success { @include animation('cssProgressGlowActive4 3s linear infinite'); }
+      &.cssProgress-warning { @include animation('cssProgressGlowActive5 3s linear infinite'); }
+    }
+  }
+
+  @include cssProgressGlowActive('cssProgressGlowActive1', '#3798D9');
+  @include cssProgressGlowActive('cssProgressGlowActive2', $bar-info-bg);
+  @include cssProgressGlowActive('cssProgressGlowActive3', $bar-danger-bg);
+  @include cssProgressGlowActive('cssProgressGlowActive4', $bar-success-bg);
+  @include cssProgressGlowActive('cssProgressGlowActive5', $bar-warning-bg);
+}

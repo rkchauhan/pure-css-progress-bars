@@ -1,4 +1,6 @@
-
+/* -----------------------------------------------------
+   CSS Progress Bars
+-------------------------------------------------------- */
 .cssProgress {
    width: 100%;
    margin-bottom: 20px;
@@ -77,14 +79,14 @@
    }
 
    .cssProgress-active {
-     animation: cssProgressActive 2s linear infinite;
+      @include animation('cssProgressActive 2s linear infinite');
    }
 
    .cssProgress-active-right {
-      animation: cssProgressActiveRight 2s linear infinite;
+      @include animation('cssProgressActiveRight 2s linear infinite');
    }
 
-   @keyframes cssProgressActive {
+   @include keyframes('cssProgressActive') {
       0% {
          background-position: 0 0;
       }
@@ -93,7 +95,7 @@
       }
    }
 
-   @keyframes cssProgressActiveRight {
+   @include keyframes('cssProgressActiveRight') {
       0% {
          background-position: 0 0;
       }
